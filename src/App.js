@@ -4,17 +4,32 @@ import NavBar from './components/NavBar';
 import Corousel from './components/Corousel';
 import BlogsContainer from './components/BlogsContainer';
 import BlogPage from './components/BlogPage';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
-      <BlogPage />
-    </div>
+    <Router>
+      <div className='App'>
+        <Switch>
+          <Route exact path='/'>
+            <NavBar />
+            <Corousel />
+            <BlogsContainer />
+          </Route>
+
+          <Route exact path='/BlogPage'>
+            <BlogPage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
 export default App;
 
-//<NavBar />
-//      <Corousel />
-//      <BlogsContainer />
+// Details
+// The Router needs to be used to wrap the main div.
+// All the ROute components need to be wrapped up in Switch Component or statement.
+// Need to use exact to differentiate all other routes.
+// And then pass the required component thats to be rendered.

@@ -45,7 +45,9 @@ const ListItem = () => {
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
-              React useState
+              <Link style={{ textDecoration: 'none' }} to='/BlogPage'>
+                React useState
+              </Link>
             </Typography>
             <Typography variant='body2' color='textSecondary' component='p'>
               Lizards are a widespread group of squamate reptiles, with over
@@ -55,7 +57,7 @@ const ListItem = () => {
         </CardActionArea>
         <CardActions className={classes.cardActions}>
           <Box className={classes.author}>
-            <Avatar src='https://images.unsplash.com/photo-1615326152341-5ac7d091312f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80' />
+            <Avatar src='https://avatars.githubusercontent.com/u/48408336?s=460&u=fb6a477045ed8250777f6e992d048ace7c06b7ef&v=4' />
             <Box ml={2}>
               <Typography variant='subtitle2' component='p'>
                 genzyy GOD

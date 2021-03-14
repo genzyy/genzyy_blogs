@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 import NavBar from './NavBar';
-import Readme from '../content/README.md';
+import Readme from '../content/Vscode.md';
 import '../BlogPage.css';
 
 const useStyles = makeStyles(theme => ({
@@ -15,14 +15,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const BlogPage = () => {
+  // State to preserve the text taken from the md file.
   const [text, setText] = useState('');
   const classes = useStyles();
+  // fetching the contents of the readme file in a async/await function.
   fetch(Readme)
     .then(response => response.text())
     .then(text => {
       setText(text);
     });
 
+  // Function for rendering the code part in the readme file
+  // And to add syntax highlighting in <code></code> part.
   const renderers = {
     code: ({ language, value }) => {
       return (
