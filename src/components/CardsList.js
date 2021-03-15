@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+
 import ListItem from './ListItem';
 
 const CardsList = () => {

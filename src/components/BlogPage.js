@@ -3,7 +3,11 @@ import ReactMarkdown from 'react-markdown';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism/';
+import {
+  atomDark,
+  materialDark
+} from 'react-syntax-highlighter/dist/esm/styles/prism/';
+import { Helmet } from 'react-helmet';
 import NavBar from './NavBar';
 import Readme from '../content/Vscode.md';
 import '../BlogPage.css';
@@ -14,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const BlogPage = () => {
+const BlogPage = ({ title }) => {
   // State to preserve the text taken from the md file.
   const [text, setText] = useState('');
   const classes = useStyles();
@@ -31,7 +35,7 @@ const BlogPage = () => {
     code: ({ language, value }) => {
       return (
         <SyntaxHighlighter
-          style={atomDark}
+          style={materialDark}
           language={language}
           children={value}
         />
@@ -41,6 +45,9 @@ const BlogPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{title ? title : 'Vscode Setup'}</title>
+      </Helmet>
       <NavBar />
       <Grid
         className='main_div'
