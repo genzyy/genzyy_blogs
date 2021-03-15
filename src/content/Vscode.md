@@ -6,7 +6,7 @@ In this setup I will be sharing all the extensions and my `settings.json` file f
 
 ## Setup
 
-![](./assets/vscode/vscode.png)
+![](https://raw.githubusercontent.com/genzyy/genzyy_blogs/main/src/content/assets/vscode/vscode.png)
 
 ## Extensions That I Use
 

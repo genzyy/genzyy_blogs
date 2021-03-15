@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import Corousel from './components/Corousel';
 import BlogsContainer from './components/BlogsContainer';
-import BlogPage from './components/BlogPage';
+import VscodeSetup from './components/Pages/VscodeSetup';
+import BSPWM from './components/Pages/BSPWM';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -17,8 +17,11 @@ function App() {
             <BlogsContainer />
           </Route>
 
-          <Route exact path='/BlogPage'>
-            <BlogPage />
+          <Route exact path='/vscode_setup'>
+            <VscodeSetup />
+          </Route>
+          <Route exact path='/bspwm_config'>
+            <BSPWM />
           </Route>
         </Switch>
       </div>

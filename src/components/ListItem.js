@@ -16,7 +16,9 @@ import { Router, Link } from 'react-router-dom';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: '100%',
-    textAlign: 'left'
+    textAlign: 'left',
+    backgroundColor: '#1f2029',
+    color: '#ffffff'
   },
   media: {
     height: 240
@@ -28,10 +30,16 @@ const useStyles = makeStyles(theme => ({
   },
   author: {
     display: 'flex'
+  },
+  textcolor: {
+    color: '#ffffff'
+  },
+  bookmarkbutton: {
+    color: '#50b77b'
   }
 }));
 
-const ListItem = ({ title, description, author }) => {
+const ListItem = ({ title, description, author, image_url, afterlink }) => {
   const classes = useStyles();
 
   return (
@@ -40,21 +48,28 @@ const ListItem = ({ title, description, author }) => {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image='https://images.unsplash.com/photo-1615239540150-14fc4f3ebdbc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80'
-            title='Contemplative Reptile'
+            image={image_url}
+            title={title}
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
-              <Link style={{ textDecoration: 'none' }} to='/BlogPage'>
+              <Link
+                style={{ textDecoration: 'none', color: '#ffffff' }}
+                to={`/${afterlink}`}
+              >
                 {title ? title : 'React useState'}
               </Link>
             </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
+            <Typography
+              className={classes.textcolor}
+              variant='body2'
+              color='textSecondary'
+              component='p'
+            >
               {description
                 ? description
                 : `Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica`}
-              '
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -66,6 +81,7 @@ const ListItem = ({ title, description, author }) => {
                 {author ? author : `genzyy GOD`}
               </Typography>
               <Typography
+                className={classes.textcolor}
                 variant='subtitle2'
                 color='textSecondary'
                 component='p'
@@ -74,7 +90,7 @@ const ListItem = ({ title, description, author }) => {
               </Typography>
             </Box>
           </Box>
-          <Box>
+          <Box className={classes.bookmarkbutton}>
             <BookmarkBorderIcon />
           </Box>
         </CardActions>
