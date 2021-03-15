@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ListItem = () => {
+const ListItem = ({ title, description, author }) => {
   const classes = useStyles();
 
   return (
@@ -46,12 +46,15 @@ const ListItem = () => {
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
               <Link style={{ textDecoration: 'none' }} to='/BlogPage'>
-                React useState
+                {title ? title : 'React useState'}
               </Link>
             </Typography>
             <Typography variant='body2' color='textSecondary' component='p'>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              {description
+                ? description
+                : `Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica`}
+              '
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -60,7 +63,7 @@ const ListItem = () => {
             <Avatar src='https://avatars.githubusercontent.com/u/48408336?s=460&u=fb6a477045ed8250777f6e992d048ace7c06b7ef&v=4' />
             <Box ml={2}>
               <Typography variant='subtitle2' component='p'>
-                genzyy GOD
+                {author ? author : `genzyy GOD`}
               </Typography>
               <Typography
                 variant='subtitle2'

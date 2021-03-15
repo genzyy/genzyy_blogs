@@ -6,8 +6,8 @@ import ListItem from './ListItem';
 const CardsList = () => {
   return (
     <Grid container spacing={3}>
-      <ListItem />
-      <ListItem />
+      <ListItem title='Vscode Setup' />
+      <ListItem title='Rust' />
       <ListItem />
       <ListItem />
       <ListItem />
