@@ -5,6 +5,8 @@ import BlogsContainer from './components/BlogsContainer';
 import VscodeSetup from './components/Pages/VscodeSetup';
 import BSPWM from './components/Pages/BSPWM';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import BlogsPage from './components/BlogPage';
+import BlogPage from './components/BlogPage';
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
           </Route>
 
           <Route exact path='/vscode_setup'>
-            <VscodeSetup />
+            <BlogPage />
           </Route>
           <Route exact path='/bspwm_config'>
             <BSPWM />
@@ -36,3 +38,4 @@ export default App;
 // All the ROute components need to be wrapped up in Switch Component or statement.
 // Need to use exact to differentiate all other routes.
 // And then pass the required component thats to be rendered.
+// <VscodeSetup />

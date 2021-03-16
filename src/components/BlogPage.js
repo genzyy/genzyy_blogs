@@ -9,8 +9,12 @@ import {
 } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 import { Helmet } from 'react-helmet';
 import NavBar from './NavBar';
-import Readme from '../content/Vscode.md';
+import Readme from '../content/README.md';
 import '../BlogPage.css';
+
+const importAll = r => r.keys().map(r);
+const markdownFiles = importAll(require.context('../content', false, /\.md$/));
+console.log(markdownFiles);
 
 const useStyles = makeStyles(theme => ({
   container: {
