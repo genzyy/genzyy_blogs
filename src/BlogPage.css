@@ -23,6 +23,7 @@ body {
 
 .rmd h2 {
   color: #61afef;
+  margin-top: 50px;
   margin-bottom: 27px;
   text-decoration: underline;
 }
@@ -66,11 +67,18 @@ h1 {
   text-decoration: underline;
 }
 
+.rmd p em code {
+  font-style: italic;
+}
+
 @media only screen and (max-width: 600px) {
   .rmd h1 {
     text-align: center;
     color: #98c379;
     font-size: 2rem;
     margin-bottom: 20%;
+  }
+  .rmd {
+    padding: 0px 15px;
   }
 }

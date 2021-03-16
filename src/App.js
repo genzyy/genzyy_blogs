@@ -5,6 +5,7 @@ import BlogsContainer from './components/BlogsContainer';
 import VscodeSetup from './components/Pages/VscodeSetup';
 import BSPWM from './components/Pages/BSPWM';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ProgressBar from 'react-scroll-progress-bar';
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
           </Route>
 
           <Route exact path='/vscode_setup'>
+            <ProgressBar />
             <VscodeSetup />
           </Route>
           <Route exact path='/bspwm_config'>
+            <ProgressBar />
             <BSPWM />
           </Route>
         </Switch>

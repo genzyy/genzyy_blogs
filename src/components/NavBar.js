@@ -29,15 +29,15 @@ const NavBar = () => {
               genzyy_blogs
             </Link>
           </Typography>
-          <Typography variant='h6' color='primary'>
-            <Link
-              style={{ textDecoration: 'none', color: '#c2d94c' }}
-              to='https://github.com/genzyy?tab=overview&from=2021-03-01&to=2021-03-14'
-              target='_blank'
-            >
+          <a
+            style={{ textDecoration: 'none' }}
+            href='https://github.com/genzyy?tab=overview&from=2021-03-01&to=2021-03-14'
+            target='_blank'
+          >
+            <Typography variant='h6' color='primary'>
               Github
-            </Link>
-          </Typography>
+            </Typography>
+          </a>
         </Toolbar>
       </AppBar>
     </div>
@@ -45,3 +45,11 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+/*<Link
+              style={{ textDecoration: 'none', color: '#c2d94c' }}
+              to='https://github.com/genzyy?tab=overview&from=2021-03-01&to=2021-03-14'
+              target='_blank'
+            >
+              Github
+            </Link> */
