@@ -4,8 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import {
-  atomDark,
-  materialDark
+  materialDark,
+  coldarkDark
 } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 import { Helmet } from 'react-helmet';
 import NavBar from './NavBar';
@@ -39,7 +39,7 @@ const BlogPage = ({ title }) => {
     code: ({ language, value }) => {
       return (
         <SyntaxHighlighter
-          style={materialDark}
+          style={coldarkDark}
           language={language}
           children={value}
         />

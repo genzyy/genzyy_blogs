@@ -5,8 +5,6 @@ import BlogsContainer from './components/BlogsContainer';
 import VscodeSetup from './components/Pages/VscodeSetup';
 import BSPWM from './components/Pages/BSPWM';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import BlogsPage from './components/BlogPage';
-import BlogPage from './components/BlogPage';
 
 function App() {
   return (
@@ -20,7 +18,7 @@ function App() {
           </Route>
 
           <Route exact path='/vscode_setup'>
-            <BlogPage />
+            <VscodeSetup />
           </Route>
           <Route exact path='/bspwm_config'>
             <BSPWM />
