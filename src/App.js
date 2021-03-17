@@ -7,6 +7,7 @@ import BlogsContainer from './components/BlogsContainer';
 import VscodeSetup from './components/Pages/VscodeSetup';
 import BSPWM from './components/Pages/BSPWM';
 import Footer from './components/Footer';
+import Recommended from './components/Recommended';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/vscode_setup'>
             <ProgressBar />
             <VscodeSetup />
+            <Recommended />
             <Footer />
           </Route>
           <Route exact path='/bspwm_config'>
