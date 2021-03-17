@@ -73,6 +73,10 @@ h1 {
   border-radius: 3px;
 }
 
+.rmd ul {
+  list-style-type: lower-greek;
+}
+
 @media only screen and (max-width: 600px) {
   .rmd h1 {
     text-align: center;

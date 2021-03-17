@@ -1,11 +1,12 @@
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ProgressBar from 'react-scroll-progress-bar';
 import NavBar from './components/NavBar';
 import Corousel from './components/Corousel';
 import BlogsContainer from './components/BlogsContainer';
 import VscodeSetup from './components/Pages/VscodeSetup';
 import BSPWM from './components/Pages/BSPWM';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ProgressBar from 'react-scroll-progress-bar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,15 +17,18 @@ function App() {
             <NavBar />
             <Corousel />
             <BlogsContainer />
+            <Footer />
           </Route>
 
           <Route exact path='/vscode_setup'>
             <ProgressBar />
             <VscodeSetup />
+            <Footer />
           </Route>
           <Route exact path='/bspwm_config'>
             <ProgressBar />
             <BSPWM />
+            <Footer />
           </Route>
         </Switch>
       </div>
