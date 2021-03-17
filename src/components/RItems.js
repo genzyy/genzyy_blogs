@@ -6,14 +6,15 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
+import BookIcon from '@material-ui/icons/Book';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   card: {
     minWidth: 275,
     backgroundColor: '#1f2029',
-    color: '#ffffff'
+    color: '#ffffff',
+    border: '1px solid #595369'
   },
   bullet: {
     display: 'inline-block',
@@ -48,7 +49,7 @@ const RItems = ({ title, description, link }) => {
             </Typography>
             <Typography className={classes.pos} color='textSecondary'>
               <Link to={link}>
-                <OpenInBrowserIcon className={classes.iconColor} />
+                <BookIcon className={classes.iconColor} />
               </Link>
             </Typography>
             <Typography variant='body2' component='p'>
