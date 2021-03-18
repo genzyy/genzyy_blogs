@@ -28,7 +28,7 @@ const Corousel = () => {
   return (
     <div>
       <Box className={classes.hero}>
-        <Box>React Blogs</Box>
+        <Box>genzyy blogs</Box>
       </Box>
     </div>
   );

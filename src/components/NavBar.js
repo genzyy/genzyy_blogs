@@ -26,7 +26,7 @@ const NavBar = () => {
         <Toolbar className={classes.toolBar}>
           <Typography variant='h6' color='primary'>
             <Link style={{ textDecoration: 'none', color: '#c2d94c' }} to='/'>
-              genzyy_blogs
+              genzyy
             </Link>
           </Typography>
           <a
