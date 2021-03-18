@@ -77,6 +77,13 @@ h1 {
   list-style-type: lower-greek;
 }
 
+.seperation {
+  width: 60%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #98c379;
+}
+
 @media only screen and (max-width: 600px) {
   .rmd h1 {
     text-align: center;
@@ -86,5 +93,12 @@ h1 {
   }
   .rmd {
     padding: 0px 15px;
+  }
+
+  .seperation {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #98c379;
   }
 }

@@ -58,6 +58,7 @@ const VscodeSetup = ({ title }) => {
       >
         <ReactMarkdown renderers={renderers} className='rmd' source={text} />
       </Grid>
+      <hr className='seperation' />
     </>
   );
 };

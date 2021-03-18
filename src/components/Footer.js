@@ -38,7 +38,7 @@ const Footer = () => {
           <Grid item>
             <a
               href='www.reddit.com'
-              style={{ color: '#ffffff' }}
+              style={{ color: '#FF5700' }}
               target='_blank'
             >
               <RedditIcon />

@@ -30,6 +30,7 @@ function App() {
           <Route exact path='/bspwm_config'>
             <ProgressBar />
             <BSPWM />
+            <Recommended />
             <Footer />
           </Route>
         </Switch>
