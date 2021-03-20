@@ -27,8 +27,7 @@ const useStyles = makeStyles(theme => ({
   cardActions: {
     display: 'flex',
     margin: '0 10px',
-    justifyContent: 'space-between',
-    borderTop: '0.5px solid #696969'
+    justifyContent: 'space-between'
   },
   author: {
     display: 'flex'
