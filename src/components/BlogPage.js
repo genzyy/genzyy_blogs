@@ -3,10 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import {
-  materialDark,
-  coldarkDark
-} from 'react-syntax-highlighter/dist/esm/styles/prism/';
+import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 import { Helmet } from 'react-helmet';
 import NavBar from './NavBar';
 import Readme from '../content/README.md';

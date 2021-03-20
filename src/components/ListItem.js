@@ -6,14 +6,13 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Avatar from '@material-ui/core/Avatar';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import IconButton from '@material-ui/core/IconButton';
-import { Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   card: {
