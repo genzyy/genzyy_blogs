@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ProgressBar from 'react-scroll-progress-bar';
+import { Helmet } from 'react-helmet';
 import NavBar from './components/NavBar';
 import Corousel from './components/Corousel';
 import BlogsContainer from './components/BlogsContainer';
@@ -15,6 +16,9 @@ function App() {
       <div className='App'>
         <Switch>
           <Route exact path='/'>
+            <Helmet>
+              <title>genzyy_blogs</title>
+            </Helmet>
             <NavBar />
             <Corousel />
             <BlogsContainer />
