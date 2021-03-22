@@ -8,7 +8,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles(theme => ({
   footer: {
-    padding: '40px 20px'
+    padding: '40px 20px',
+    width: '100%'
   }
 }));
 
@@ -47,7 +48,7 @@ const Footer = () => {
           <Grid item>
             <a
               href='www.linkedin.com'
-              style={{ color: '#ffffff' }}
+              style={{ color: '#0072b1' }}
               target='_blank'
             >
               <LinkedInIcon />

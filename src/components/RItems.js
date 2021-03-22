@@ -35,7 +35,6 @@ const useStyles = makeStyles({
 
 const RItems = ({ title, description, link }) => {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <>
