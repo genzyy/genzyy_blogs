@@ -28,13 +28,11 @@ function App() {
           <Route exact path='/vscode_setup'>
             <ProgressBar />
             <VscodeSetup />
-            <Recommended />
             <Footer />
           </Route>
           <Route exact path='/bspwm_config'>
             <ProgressBar />
             <BSPWM />
-            <Recommended />
             <Footer />
           </Route>
         </Switch>

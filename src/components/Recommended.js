@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import RItems from './RItems';
+import '../styles/RItems.css';
 
 const Recommended = () => {
   return (
@@ -13,6 +14,7 @@ const Recommended = () => {
         spacing={3}
       >
         <RItems
+          className='RItems'
           title='bspwm config'
           description='A beutiful linux wm setup'
           link='/bspwm_config'
