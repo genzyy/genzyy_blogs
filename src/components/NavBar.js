@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles(theme => ({
   appBar: {
     backgroundColor: '#0A0E14',
-    color: '#C2D94C',
-    borderBottom: '2px solid #C2D94C'
+    color: '#98c379',
+    borderBottom: '2px solid #98c379'
   },
   toolBar: {
     display: 'flex',
@@ -25,7 +25,7 @@ const NavBar = () => {
       <AppBar position='static' className={classes.appBar}>
         <Toolbar className={classes.toolBar}>
           <Typography variant='h6' color='primary'>
-            <Link style={{ textDecoration: 'none', color: '#c2d94c' }} to='/'>
+            <Link style={{ textDecoration: 'none', color: '#98c379' }} to='/'>
               genzyy
             </Link>
           </Typography>
@@ -34,7 +34,11 @@ const NavBar = () => {
             href='https://github.com/genzyy?tab=overview&from=2021-03-01&to=2021-03-14'
             target='_blank'
           >
-            <Typography variant='h6' color='primary'>
+            <Typography
+              style={{ color: '#98c379' }}
+              variant='h6'
+              color='primary'
+            >
               Github
             </Typography>
           </a>

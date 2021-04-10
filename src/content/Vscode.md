@@ -1,6 +1,6 @@
 # Vscode Setup
 
-So for sometime I have been using vim( neovim ) for most of the editing part but recently I moved to vscode and this is my setup.
+So for sometime I have been using vim (neovim) for most of the editing part but recently I moved to vscode and this is my setup.
 
 In this setup I will be sharing all the extensions and my `settings.json` file for better understanding
 
@@ -10,43 +10,43 @@ In this setup I will be sharing all the extensions and my `settings.json` file f
 
 ## Extensions That I Use
 
-- Auto Close Tag 
+- Auto Close Tag
 
-- Auto Rename Tag 
+- Auto Rename Tag
 
-- Better Comments 
+- Better Comments
 
-- Bracket Pair Colorizer 2 
+- Bracket Pair Colorizer 2
 
-- Carbon Product Icons 
+- Carbon Product Icons
 
-- Color Highlight 
+- Color Highlight
 
-- ES7 React/Redux/GraphQL/React-Native snippets 
+- ES7 React/Redux/GraphQL/React-Native snippets
 
-- Font Switcher 
+- Font Switcher
 
-- Import Cost 
+- Import Cost
 
-- Live Server 
+- Live Server
 
-- Prettier 
+- Prettier
 
 ## Some Info About Certain Extensions
 
-* ***Auto close and rename tag*** helps to write the close tag in html and react and also if you rename the opening or closing tag then it automatically renames the other one.
+- **_Auto close and rename tag_** helps to write the close tag in html and react and also if you rename the opening or closing tag then it automatically renames the other one.
 
-* ***Better Comments*** helps to add todo's as comments with a better highlighting and color syntax and also better informatiion comments. Read more about them [here](https://github.com/aaron-bond/better-comments).
+- **_Better Comments_** helps to add todo's as comments with a better highlighting and color syntax and also better informatiion comments. Read more about them [here](https://github.com/aaron-bond/better-comments).
 
-* ***Bracket Pair Colorizer 2*** helps to understand and locate the bracket pairs more clearly. Check my `settings.json` for the configuration.
+- **_Bracket Pair Colorizer 2_** helps to understand and locate the bracket pairs more clearly. Check my `settings.json` for the configuration.
 
-* ***Color Highlight*** add the color as the background to the hex colors written in react or css files.
+- **_Color Highlight_** add the color as the background to the hex colors written in react or css files.
 
-* ***Import Cost*** gives the size of the imported file in the react files ( works for both react and other type of files and frameworks ).
+- **_Import Cost_** gives the size of the imported file in the react files ( works for both react and other type of files and frameworks ).
 
-* ***Live Server*** same as the popular npm package but is integrated in vscode for ease.
+- **_Live Server_** same as the popular npm package but is integrated in vscode for ease.
 
-* ***Prettier*** best code formatter when you save or paste something in your files. It formats the file and the syntax for better viewing
+- **_Prettier_** best code formatter when you save or paste something in your files. It formats the file and the syntax for better viewing
 
 ## Settings.json
 
