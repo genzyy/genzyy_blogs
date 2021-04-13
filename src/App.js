@@ -49,3 +49,7 @@ export default App;
 // Need to use exact to differentiate all other routes.
 // And then pass the required component thats to be rendered.
 // <VscodeSetup />
+// As of now the recommended articles section from the blogpage
+// has been removed as it was creating problems with alignment, scrolling in mobile phones
+// and progress bar.
+// It will be fixed in the near future.
